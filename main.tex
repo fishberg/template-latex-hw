@@ -1,0 +1,24 @@
+\documentclass[letterpaper,10pt]{article}
+
+\input{tex/preamble}
+\input{tex/macros}
+\input{tex/notation}
+
+\begin{document}
+
+\homework{Course Number: Course Title}{Fall 2026}{1}{September 1, 2026}{Andrew Fishberg}{ChatGPT/Claude}
+
+\begin{shorthand}
+\inputq{src/def}
+\inputq{src/q1}
+\inputq{src/q2}
+\inputq{src/q3}
+\end{shorthand}
+
+\ifanycitation
+% \nocite{*} % show all citations in the .bib file, even if not cited in the text
+\bibliographystyle{unsrt}
+\bibliography{bib/references}
+\fi
+
+\end{document}

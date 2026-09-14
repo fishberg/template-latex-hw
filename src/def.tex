@@ -1,0 +1,34 @@
+\section*{Definitions \& Notes}
+
+To learn more about \LaTeX, see \cite{knuth1984texbook}. This is an important paper \cite{erdos1959random}.
+
+\mybox{Fundamental Theorem of Algebra}{
+Every non-zero, single-variable, degree $n$ polynomial with complex coefficients has, counted with multiplicity, exactly $n$ complex roots.
+\solidrule
+\textbf{Reference:} \url{https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra}
+}
+
+\mybox{Semidefinite Programming (SDP)}{
+Semidefinite programming (SDP) is a special case of convex optimization defined as:
+\begin{mini*}
+{\X \in \symm^n}{ \langle \C, \X \rangle}{}{}
+\addConstraint{\langle \A_k, \X \rangle}{\leq b_k \qquad k = 1, \dots, m}
+\addConstraint{\X}{\succeq 0}
+\end{mini*}
+where:
+\begin{itemize}
+\item $\C, \A_k \in \symm^n$ and $b_k \in \reals$ are given
+\item $\X \in \symm^n$ is the optimization variable
+\item $\symm^n$ is the set of $n \times n$ symmetric matrices
+\item $\X \succeq 0$ means that $\X$ is positive semidefinite (i.e., all eigenvalues of $\X$ are non-negative)
+\item $\langle \A, \B \rangle$ of two arbitrary matrices $\A, \B$ is the Frobenius inner product defined as:
+$$\langle \A, \B \rangle = \A \bullet \B = \Tr(\A^\top \B) = \sum_{i,j} A_{ij} B_{ij}$$
+\end{itemize}
+
+\solidrule
+\textbf{Reference:} \href{https://en.wikipedia.org/wiki/Semidefinite_programming\#Equivalent_formulations}{Link to Wikipedia Article on Semidefinite Programming}
+}
+
+\mybox{AI Usage Statement}{
+ChatGPT/Claude were used as supplementary tools throughout this assignment, including assistance with mathematical concepts and code generation. Significant time was spent working through the material independently, and all problem writeups are my own.
+}

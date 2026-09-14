@@ -1,0 +1,53 @@
+% \newcommand{\homework}[6]{
+%     \noindent
+%     \begin{center}
+%         \framebox{
+%             \vbox{
+% 	            \vspace{0.5mm}
+%                 \hbox to 5.78 in { {\bf #1} \hfill #2 }
+%                 \vspace{5mm}
+%                 \hbox to 5.78in { {\large \hfill \Large{Problem Set #3} \hfill} }
+%                 \hbox to 5.78in { {\large \hfill \small{Due: #4} \hfill} }
+%                 \vspace{1mm}
+%                 \hbox to 5.78in { {#5} \hfill \hfill {Collaborators: #6} }
+%             }
+%         }
+%     \end{center}
+%     \vspace*{4mm}
+% }
+
+\newcommand{\homework}[6]{%
+    \begin{center}
+        \setlength{\fboxsep}{5pt}%
+        \framebox{%
+            \begin{minipage}{0.95\textwidth}
+                \textbf{#1}
+                \hfill
+                #2
+
+                \vspace{1.25em}
+
+                \begin{center}
+                    {\Large Problem Set #3}\\
+                    {\small Due: #4}
+                \end{center}
+
+                \vspace{0.75em}
+
+                \textbf{Name:} #5
+                \hfill
+                \textbf{Collaborators:} #6
+            \end{minipage}%
+        }
+    \end{center}
+    \vspace{0.5em}
+}
+
+
+
+\newcommand{\inputq}[1]{%
+  \begingroup
+  \input{#1}%
+  \endgroup
+  \clearpage
+}
