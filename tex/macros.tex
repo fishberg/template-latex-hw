@@ -1,33 +1,20 @@
-\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
-\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
-
-\DeclareMathOperator*{\argmax}{\arg\!\max}
-\DeclareMathOperator*{\argmin}{\arg\!\min}
-
-\newcommand{\eval}[2]{\left.#1\right|_{#2}}
-
-\newcommand{\reals}{\mathbb{R}}
-\newcommand{\complexes}{\mathbb{C}}
-\newcommand{\naturals}{\mathbb{N}}
-\newcommand{\integers}{\mathbb{Z}}
-\newcommand{\rationals}{\mathbb{Q}}
-\newcommand{\bin}{\{0,1\}}
-
-\newcommand{\symm}{\mathbb{S}}
-\newcommand{\psd}{\mathbb{S}_+}
-\newcommand{\pd}{\mathbb{S}_{++}}
-
-\newcommand{\op}[1]{\operatorname{#1}}
-\newcommand{\Tr}{\operatorname{Tr}}
-\newcommand{\rank}{\operatorname{rank}}
-
 \newcommand{\ones}{\mathbf{1}}
 \newcommand{\zeros}{\mathbf{0}}
 
 \newcommand{\mytodo}[1]{\textcolor{red}{#1}}
+\newcommand{\myquote}[1]{\textcolor{green}{#1}}
+\newcommand{\myedit}[1]{\textcolor{blue}{#1}}
+%\newcommand{\myedit}[1]{#1}
 
 \renewcommand{\arraystretch}{1.5} % increase spacing in matrices
 
 \newcommand{\anno}[1]{\relax&\relax&\text{#1}} % annotate in align
+
+% Resize display math, e.g. \scalemath{0.9}{x = y}
+% https://tex.stackexchange.com/questions/95821
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+
+\newcommand{\link}[2]{\href{#2}{#1}}
+\newcommand{\myref}[1]{\href{#1}{[X]}}
 
 \input{tex/macros.d/all}

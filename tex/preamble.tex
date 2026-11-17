@@ -6,6 +6,9 @@
 %\usepackage{accents} % for \underaccent
 \usepackage{bm}
 \usepackage{graphicx}
+\usepackage{array} % column formatting for notation tables
+\usepackage{longtable} % multipage notation tables
+\usepackage{booktabs} % table rules
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{hyperref}
@@ -41,14 +44,4 @@
 \hbadness=10000  % Suppress underfull \hbox warnings
 \vbadness=10000  % Suppress underfull \vbox warnings
 
-\usepackage{etoolbox} % needed for \AtBeginEnvironment
-
-% Track whether the document actually cites anything, so main.tex can skip
-% \bibliography/\printbibliography (and the "References" heading) entirely
-% when it doesn't -- this also keeps BibTeX from ever running and printing
-% its harmless-but-noisy "I found no \citation commands" warning.
-\newif\ifanycitation
-\AtBeginDocument{%
-  \pretocmd{\cite}{\global\anycitationtrue}{}{}%
-  \pretocmd{\nocite}{\global\anycitationtrue}{}{}%
-}
+\usepackage{etoolbox} % needed for \AtBeginEnvironment and citation tracking
